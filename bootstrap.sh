@@ -8,7 +8,7 @@ sudo /sbin/swapon /var/swap.1
 sudo apt-get update
 
 echo "
-   Installing MySql - dbName: skeleton | user:root | password:rootpass
+   Installing MySql - dbName: nss | user:root | password:rootpass
 ***************************************************************"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password rootpass"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password rootpass"
@@ -49,19 +49,13 @@ sudo bash -c "echo 'server {
     listen 80;
     sendfile off;
     root /vagrant/public;
-    index index.php index.html index.htm;
+    index index.php;
     server_name nss.local;
     location / {
         try_files  \$uri /index.php;
     }
     client_max_body_size 16M;
     client_body_buffer_size 2M;
-
-    error_page 404 /404.html;
-    error_page 500 502 503 504 /50x.html;
-    location = /50x.html {
-        root /usr/share/nginx/html;
-    }
 
     location ~ \.php$ {
         try_files \$uri =404;
