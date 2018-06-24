@@ -39,9 +39,6 @@ Developed by Andrew Palmer for Elegant Marketplace www.elegantmarketplace.com Fr
 #main-content > #post-2 .et_pb_sidebar_1,#main-content > #post-2 .et_pb_sidebar_2{ 
 	margin-top: 20px;
     border-top: 30px solid #ff9000;
-   
-    padding-bottom: 20px;
-	
 }
 
 #main-content > #post-2 .et_pb_widget_area_left{
@@ -67,4 +64,41 @@ Developed by Andrew Palmer for Elegant Marketplace www.elegantmarketplace.com Fr
 }
 #media_image-9{
 	margin-bottom: 0!important;
+}
+
+/* cart widget */
+
+#main-content .woocommerce-mini-cart__buttons > a:first-child { display: none; }
+#main-content .woocommerce-mini-cart__buttons .checkout{
+	background: url('https://www.nonstopshop.rs/cms/img/btn_order.png') no-repeat 6px center;
+   border: 0!important;
+  z-index: 100;
+	min-height:78px;
+	min-width: 175px;
+}
+#main-content .woocommerce-mini-cart__buttons a
+{
+    color: transparent; 
+}
+#woocommerce_widget_cart-3{
+	margin-bottom: 0px;
+}
+
+.et_pb_container clearfix et_pb_empty_slide {
+	height: auto;
+}
+.et_pb_slide_description {
+	padding: 0;	
+}
+
+.et_pb_slide {
+
+    padding: 0;
+
+}
+.et_pb_slide_image, .et_pb_slide_video {
+	position: static;	
+    width: 100%;
+    margin-right: 0;
+	margin-top: 0 !important;
 }
