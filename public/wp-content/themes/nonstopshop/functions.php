@@ -175,5 +175,11 @@ add_filter('et_epanel_layout_data', 'my_added_social_icons', 99);
 
 define( 'DDPL_DOMAIN', 'my-domain' ); // translation domain
 require_once( 'vendor/divi-disable-premade-layouts/divi-disable-premade-layouts.php' );
+//add font-awesom to theme
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+
+function enqueue_load_fa() {
+	wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-	awesome.min.css' );
+	}
 
 ?>

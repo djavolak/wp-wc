@@ -12,4 +12,59 @@ Developed by Andrew Palmer for Elegant Marketplace www.elegantmarketplace.com Fr
 
 /* ----------- PUT YOUR CUSTOM CSS BELOW THIS LINE -- DO NOT EDIT ABOVE THIS LINE --------------------------- */ 
 
+#woocommerce_product_categories-2 > h4, #custom_html-2 > h4, #woocommerce_widget_cart-3 > h4 {
+	display:none;
+}
 
+#woocommerce_product_categories-2 ul {
+  list-style: none;
+  padding: 0;
+}
+#woocommerce_product_categories-2 li {
+  padding-left: 1.3em;
+}
+
+#woocommerce_product_categories-2 a {
+  font-weight: bold;
+}
+#woocommerce_product_categories-2 li:before {
+  content: "\f04b"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+/*Add top colored margin on sidebar box*/
+#main-content > #post-2 .et_pb_sidebar_1,#main-content > #post-2 .et_pb_sidebar_2{ 
+	margin-top: 20px;
+    border-top: 30px solid #ff9000;
+   
+    padding-bottom: 20px;
+	
+}
+
+#main-content > #post-2 .et_pb_widget_area_left{
+	padding-right: 0px;
+}
+#main-content #custom_html-2 .products li .et_shop_image{
+	float:left;
+	width:40%;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#main-content #custom_html-2 .products li .woocommerce-loop-product__title{
+	float:left;
+	width:50%;
+	text-align: left;
+}
+#main-content #custom_html-2 .products li .price{
+	float:left;
+}
+#main-content #custom_html-2 ul.products li.product a img{
+	margin: 0!important;
+}
+#media_image-9{
+	margin-bottom: 0!important;
+}
